@@ -8,8 +8,9 @@ phases:
         - apt-get install -y maven
    build:
     commands:
+        - cd demo
         - mvn clean install
 artifacts:
    files:
-      - target/demo-0.0.1-SNAPSHOT.jar
+      - demo/target/demo-0.0.1-SNAPSHOT.jar
    discard-paths: yes
